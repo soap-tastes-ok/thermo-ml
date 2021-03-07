@@ -48,8 +48,8 @@ electronegativity, atomic radius, etc) of thousands of compounds, which
 then can use that learned relationships to accurately predict
 thermodynamic properties of completely unknown compounds.
 
-Release notes & Work plan
--------------------------
+Road map
+-------
 
 * 2020.03.07 - [Done] added “parse.py” module to parse chemical formula into its constituent atoms 
 
