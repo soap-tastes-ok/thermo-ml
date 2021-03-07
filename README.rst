@@ -82,6 +82,7 @@ Examples
 To parse a chemical formula into it's constituent atoms, use the `ChemParser` module.
 
 .. code-block:: python
+    
     >>> from thermo_ml import parse
     >>> CP = parse.ChemParser()
     >>> CP.atoms("Ca2SiO3(OH)2")
