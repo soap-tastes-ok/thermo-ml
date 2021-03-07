@@ -3,7 +3,7 @@ Thermo-ML
 =========
 
 
-:Author: Kota Matsuo (`Linkedin<https://www.linkedin.com/in/kotamatsuo2015/?locale=en_US>`)
+:Author: Kota Matsuo (`Linkedin <https://www.linkedin.com/in/kotamatsuo2015/?locale=en_US>`)
 :Version: $Revision: 0001 $
 
 .. contents::
@@ -35,7 +35,7 @@ I will work on this during weekends, so please wait patiently. If you are
 interested to follow this project, please hit the star to let me know
 you are there and I’ll try to work faster ;)
 
-`Linkedin<https://www.linkedin.com/in/kotamatsuo2015/?locale=en_US>`
+`Linkedin <https://www.linkedin.com/in/kotamatsuo2015/?locale=en_US>`
 
 Goal of this project
 --------------------
