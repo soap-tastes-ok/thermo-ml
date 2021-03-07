@@ -3,7 +3,7 @@ Thermo-ML
 =========
 
 
-:Author: Kota Matsuo
+:Author: Kota Matsuo (`Linkedin<https://www.linkedin.com/in/kotamatsuo2015/?locale=en_US>`)
 :Version: $Revision: 0001 $
 
 .. contents::
@@ -27,13 +27,15 @@ enthalpy of formation)
 Who’s the author?
 -----------------
 
-I’m currently a machine learning engineer (director of AI dev in a
-startup) who was previously doing research in computational
+I’m currently a machine learning engineer (director of AI Dev in a
+startup in Tokto) who was previously doing research in computational
 thermodynamics @McGill University.
 
-I will work on this after work, so please wait patiently. If you are
+I will work on this during weekends, so please wait patiently. If you are
 interested to follow this project, please hit the star to let me know
 you are there and I’ll try to work faster ;)
+
+`Linkedin<https://www.linkedin.com/in/kotamatsuo2015/?locale=en_US>`
 
 Goal of this project
 --------------------
