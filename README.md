@@ -21,6 +21,20 @@ If you are interested to follow this project,
 please hit the star to let me know you are there
 and I'll try to work faster ;)
 
+Goal of this project
+------------------
+
+The Goal is to make an AI that learns the relationship between thermodynamic properties (e.g. enthalpy, entropy, heat capacity, etc) and atomic properties (e.g. number of valence electrons, electronegativity, atomic radius, etc) of thousands of compounds, which then can use that learned relationships to accurately predict thermodynamic properties of completely unknown compounds.
+
+Release notes & Work plan
+-----------------------
+
+2020.03.07 - [Done] added "parse.py" module to parse chemical formula into its constituent atoms
+2020.03.XX - [Plan] add module to calculate properties of atoms (e.g. valence electrons, electronegativity, atomic radius, etc).
+2020.04.XX - [Plan] add module that retrieves thermodynamic properties from JANAF database (this will be used as training data for the AI)
+2020.04.XX - [Plan] add ML module that predicts enthalpy of formation of any chemical formula, using properties of its constituent atoms.
+
+
 Installation
 ------------
 
