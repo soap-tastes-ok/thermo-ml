@@ -1,3 +1,4 @@
+=========
 Thermo-ML
 =========
 
@@ -8,7 +9,7 @@ Thermo-ML
 .. contents::
 
 
-Thermodynamics meets Machine Learning
+Thermodynamics powered with Machine Learning.
 
 What is Thermo-ML?
 ------------------
@@ -85,3 +86,11 @@ To parse a chemical formula into it's constituent atoms, use the `ChemParser` mo
     >>> CP = parse.ChemParser()
     >>> CP.atoms("Ca2SiO3(OH)2")
     [{'Ca': 2.0, 'Si': 1.0, 'O': 5.0, 'H': 2.0}]
+
+Citation
+--------
+
+To cite Thermo-ML in publications, please use::
+
+    Kota Matsuo and Contributors (2021-). Thermo-ML: Thermodynamics powered with Machine learning.
+    https://github.com/soap-tastes-ok/thermo-ml.git.
