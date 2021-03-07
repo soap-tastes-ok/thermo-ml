@@ -20,6 +20,7 @@ make accurate predictions. (If you have heard of ChemSage,
 FactSage, Thermochem, this project might interest you.)
 
 This package will (soon) include:
+
 1. Extensive thermodynamic database from JAFAF and other reliable sources
 
 2. AI that learns from the database and make accurate predictions (my plan is to start with enthalpy of formation)
