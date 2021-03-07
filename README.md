@@ -1,2 +1,2 @@
-# thermo2
+# thermocalculator
 For calculating thermodynamic properties from chemical formula
