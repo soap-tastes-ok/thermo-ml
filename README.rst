@@ -74,3 +74,14 @@ Installation
    package = '/your/directory/thermo-ml'
    if package not in sys.path:
        sys.path.append(package)
+
+Examples
+-------
+
+To parse a chemical formula into it's constituent atoms, use the `ChemParser` module.
+
+.. code-block:: python
+    >>> from thermo_ml import parse
+    >>> CP = parse.ChemParser()
+    >>> CP.atoms("Ca2SiO3(OH)2")
+    [{'Ca': 2.0, 'Si': 1.0, 'O': 5.0, 'H': 2.0}]
