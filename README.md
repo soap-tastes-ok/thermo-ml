@@ -4,10 +4,11 @@ Thermodynamics meets Machine Learning
 What is Thermo-ML?
 ---------------
 
-Thermo-ML is a python library for scientists in the field of thermodynamics (if you have heard of ChemSage, FactSage, Thermochem, that's you), who want to tap into the power of machine learning to make highly accurate predictions.
+Thermo-ML is a python library for scientists in the field of thermodynamics, who want to tap into the power of machine learning to make highly accurate predictions.
+ (If you have heard of ChemSage, FactSage, Thermochem, this project might interest you.)
 
 This package will (soon) include:
-1. Extensive thermodynamic database from JAFAV and other reliable sources
+1. Extensive thermodynamic database from JAFAF and other reliable sources
 2. AI that learns from the database and make accurate predictions (my plan is to start with enthalpy of formation)
 
 Who's the author?
