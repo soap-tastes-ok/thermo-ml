@@ -9,7 +9,7 @@ Thermo-ML
 .. contents::
 
 
-Thermodynamics powered with Machine Learning.
+Thermodynamics powered by Machine Learning.
 
 What is Thermo-ML?
 ------------------
