@@ -1,7 +1,7 @@
 # Archives
-archives/
-archive/
-resources/
+archives/*
+archive/*
+resources/*
 
 # Visual studio code work space
 *.code-workspace
