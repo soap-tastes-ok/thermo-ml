@@ -41,12 +41,11 @@ you are there and I’ll try to work faster ;)
 Goal of this project
 --------------------
 
-The Goal is to make an AI that learns the relationship between
-thermodynamic properties (e.g. enthalpy, entropy, heat capacity, etc)
-and atomic properties (e.g. number of valence electrons,
-electronegativity, atomic radius, etc) of thousands of compounds, which
-then can use that learned relationships to accurately predict
-thermodynamic properties of completely unknown compounds.
+There are two goals to this project.
+
+1. Aggregate all known physical & chemical data of atoms & molecules
+
+2. Develop an AI that learns the hidden relationships between the properties of molecules (e.g. enthalpy, entropy, heat capacity, etc) and the properties of its constituent atoms (e.g. ionization energy, atomic number, electronegativity, atomic radius, etc) of thousands of compounds, which then can be used to make accurate predictions about properties of completely unknown compounds.
 
 Road map
 -------
