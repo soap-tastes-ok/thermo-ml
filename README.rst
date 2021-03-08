@@ -19,29 +19,10 @@ thermodynamics, who want to tap into the power of machine learning to
 make accurate predictions. (If you have heard of ChemSage,
 FactSage, Thermochem, this project might interest you.)
 
-This package will (soon) include:
-
-1. Extensive thermodynamic database from JAFAF and other reliable sources
-
-2. AI that learns from the database and make accurate predictions (my plan is to start with enthalpy of formation)
-
-Who’s the author?
------------------
-
-I’m currently a machine learning engineer (director of AI Dev in a
-startup in Tokto) who was previously doing research in computational
-thermodynamics @McGill University. (`Linkedin <https://www.linkedin.com/in/kotamatsuo2015/?locale=en_US/>`_)
-
-I will work on this during weekends, so please wait patiently. If you are
-interested to follow this project, please hit the star to let me know
-you are there and I’ll try to work faster ;)
-
-
-
 Goal of this project
 --------------------
 
-There are two goals to this project.
+There are two goals to this project;
 
 1. Aggregate all known physical & chemical data of atoms & molecules
 
@@ -99,6 +80,18 @@ To parse a chemical formula into it's constituent atoms, use the `ChemParser` mo
     >>> CP = parse.ChemParser()
     >>> CP.atoms("Ca2SiO3(OH)2")
     [{'Ca': 2.0, 'Si': 1.0, 'O': 5.0, 'H': 2.0}]
+
+Who’s the author?
+-----------------
+
+I’m currently a machine learning engineer (director of AI Dev in a
+startup in Tokto) who was previously doing research in computational
+thermodynamics @McGill University. (`Linkedin <https://www.linkedin.com/in/kotamatsuo2015/?locale=en_US/>`_)
+
+I will work on this during weekends, so please wait patiently. If you are
+interested to follow this project, please hit the star to let me know
+you are there and I’ll try to work faster ;)
+
 
 Citation
 --------
