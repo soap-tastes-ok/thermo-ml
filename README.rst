@@ -53,13 +53,21 @@ Road map
 
 * 2021.03.06 - [Done] Started the project
 
-* 2021.03.07 - [Done] Sdded “parse.py” module to parse chemical formula into its constituent atoms 
+* 2021.03.07 - [Done] Added “parse.py” module to parse chemical formula into its constituent atoms 
 
-* 2021.03.XX - [JTBD] Sdd module to calculate properties of atoms (e.g. valence electrons, electronegativity, atomic radius, etc).
+* 2021.03.XX - [JTBD] Add module to get properties of atoms (e.g. ionization energy, electronegativity, atomic radius, etc).
 
-* 2021.04.XX - [JTBD] Sdd module that retrieves thermodynamic properties from JANAF database (this will be used as training data for the AI) 
+* 2021.04.XX - [JTBD] Add module to get thermodynamic properties of molecules (e.g. enthalpy, entropy, heat capacity, etc). 
 
-* 2021.04.XX - [JTBD] Sdd ML module that predicts enthalpy of formation of any chemical formula, using properties of its constituent atoms.
+* 2021.04.XX - [JTBD] Add AI module that predicts enthalpy of formation of any chemical formula, using properties of its constituent atoms.
+
+   - Idea 1: Multilinear regression w/ constraints
+
+   - Idea 2: Quadratic programming w/ constraints
+   
+   - Idea 3: Symbolic regression + genetic programming
+   
+   - Idea 4: Deep Learning
 
 Installation
 ------------
