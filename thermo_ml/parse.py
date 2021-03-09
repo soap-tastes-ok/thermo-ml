@@ -120,7 +120,7 @@ class ChemParser:
         # Left-parantheses
         elif match_left:
             # Split match with the rest
-            contains_left_paranthesis, tail = self.extract_left_delimiter(formula)
+            left_delim, tail, contains_left_paranthesis = self.extract_left_delimiter(formula)
             # Update count
             if contains_left_paranthesis:
                 n_open_parantheses += 1
@@ -134,7 +134,7 @@ class ChemParser:
         # Right-parantheses followed by an optional number (default is 1).
         elif match_right:
             # Split match with the rest
-            right_paran, num, tail = self.extract_right_delimiter(formula)
+            right_delim, num, tail = self.extract_right_delimiter(formula)
             # Base case
             if (self._multiple > 1.0) and (num > 1.0):
                 Exception('Got multiples before & after paranthesis;'
@@ -157,7 +157,7 @@ class ChemParser:
                     stack[-1][atom]  = count * num
             # Debug
             if debug:
-                print(f'Right parantheses = "{right_paran}"')
+                print(f'Right parantheses = "{right_delim}"')
                 print(f'--> stack={stack}')
 
         # # A dot w/ optional number '•4', in '•4H2O'
@@ -281,7 +281,7 @@ class ChemParser:
             self._multiple = float(self.re_num.search(left_delim).group())
         else:
             self._multiple = 1.0
-        return contains_left_paranthesis, tail
+        return left_delim, tail, contains_left_paranthesis
     
     def extract_right_delimiter(self, formula):
         """E.g. ')2)3CH3' --> ')', '2', ')3CH3'
@@ -298,11 +298,11 @@ class ChemParser:
         if not match_right:
             return None, None, None
         # Split match from the rest
-        right_paran = formula[:match_right.end() ]
+        right_delim = formula[:match_right.end() ]
         tail        = formula[ match_right.end():]
         # Split trailing number from atom (else, num = 1)
-        right_paran, num = self.extract_number(right_paran)
-        return right_paran, num, tail
+        right_delim, num = self.extract_number(right_delim)
+        return right_delim, num, tail
 
 # %%
 # formula = 'COOH[C[CH3]2]3CH3'
