@@ -1,11 +1,29 @@
-
-"""
-C*1 + O*1 + O*1 + (C*1 + (C*1 + H*3)*2)*3 + C*1 + H*3
-
-[{'H': 22, 'C': 11, 'O': 2}]
-"""
-
 import re
+
+
+def atoms(chemical_formula):
+    """Parse chemical formula into atoms and corresponding stoichiometric numbers.
+
+    Based on Extended Backus-Naur Formalism (EBNF).
+    https://www.garshol.priv.no/download/text/bnf.html
+
+    Args:
+        chemical_formula (str): chemical formula (e.g. 'COOH(C(CH3)2)3CH3')
+    
+    Returns:
+        dict: Dictionary where key=atom and value=count.
+    """
+    # Get atom counts
+    CP = ChemParser()
+    stack = CP.atoms(chemical_formula, stack=[{}], debug=False)
+    # Error case
+    if len(stack) != 1:
+        raise Exception(
+            f'Parsing unsuccessful for "{chemical_formula}"'
+            'Please contact bundes_liga.atok@hotmail.co.jp \n'
+            'Output = {stack}')
+    dict_of_atom_counts = stack[0]
+    return dict_of_atom_counts
 
 
 class ChemParser:
@@ -104,7 +122,7 @@ class ChemParser:
         # Atom with optional number
         if match_atom:
             # Split match with the rest
-            atom, num, tail = self.extract_atoms(formula)
+            atom, num, tail = self._extract_atoms(formula)
             # Add this atom to record (i.e. dictionary)
             if atom in stack[-1]:
                 # atom already exists, so increment occurence
@@ -120,7 +138,7 @@ class ChemParser:
         # Left-parantheses
         elif match_left:
             # Split match with the rest
-            left_delim, tail, contains_left_paranthesis = self.extract_left_delimiter(formula)
+            left_delim, tail, contains_left_paranthesis = self._extract_left_delimiter(formula)
             # Update count
             if contains_left_paranthesis:
                 n_open_parantheses += 1
@@ -134,7 +152,7 @@ class ChemParser:
         # Right-parantheses followed by an optional number (default is 1).
         elif match_right:
             # Split match with the rest
-            right_delim, num, tail = self.extract_right_delimiter(formula)
+            right_delim, num, tail = self._extract_right_delimiter(formula)
             # Base case
             if (self._multiple > 1.0) and (num > 1.0):
                 Exception('Got multiples before & after paranthesis;'
@@ -159,15 +177,6 @@ class ChemParser:
             if debug:
                 print(f'Right parantheses = "{right_delim}"')
                 print(f'--> stack={stack}')
-
-        # # A dot w/ optional number '•4', in '•4H2O'
-        # elif match_dot:
-        #     # Split match with the rest
-        #     dot, num, tail = self.extract_dot(formula)
-        #     # Debug
-        #     if debug:
-        #         print(f'Dot separator = "{dot}"')
-        #         print(f'--> stack={stack}')
         
         # Wrong syntax.
         else:
@@ -188,7 +197,7 @@ class ChemParser:
                 print(f'--> stack={stack}')
             return stack
         
-    def extract_number(self, formula):
+    def _extract_number(self, formula):
         """Example: 'H3' --> 'H', '3'
 
         Args:
@@ -216,7 +225,7 @@ class ChemParser:
             number = 1.0
         return string, float(number)
             
-    def extract_atoms(self, formula):
+    def _extract_atoms(self, formula):
         """Example: 'COOH(C(CH3)2)3CH3' --> 'C', '1', 'OOH(C(CH3)2)3CH3'
 
         Args:
@@ -236,22 +245,10 @@ class ChemParser:
         atom = formula[:match_atom.end() ]
         tail = formula[ match_atom.end():]
         # Split trailing number from atom (else, num = 1)
-        atom, num = self.extract_number(atom)
+        atom, num = self._extract_number(atom)
         return atom, num, tail
     
-    # def extract_dot(self, formula):
-    #     # Test match
-    #     match_dot = self.re_dot.match(formula)
-    #     # Split match from the rest
-    #     dot = formula[:match_dot.end() ]
-    #     tail = formula[ match_dot.end():]
-    #     # Split dot with trailing number if any
-    #     dot, num = self.extract_number(dot)
-    #     # Store number following the dot
-    #     self._multiple = num or 1.0
-    #     return dot, num, tail
-    
-    def extract_left_delimiter(self, formula):
+    def _extract_left_delimiter(self, formula):
         """E.g. '(C(CH3)2)3CH3' --> '(', 'C(CH3)2)3CH3'
 
         Args:
@@ -283,7 +280,7 @@ class ChemParser:
             self._multiple = 1.0
         return left_delim, tail, contains_left_paranthesis
     
-    def extract_right_delimiter(self, formula):
+    def _extract_right_delimiter(self, formula):
         """E.g. ')2)3CH3' --> ')', '2', ')3CH3'
         
         Args:
@@ -301,49 +298,5 @@ class ChemParser:
         right_delim = formula[:match_right.end() ]
         tail        = formula[ match_right.end():]
         # Split trailing number from atom (else, num = 1)
-        right_delim, num = self.extract_number(right_delim)
+        right_delim, num = self._extract_number(right_delim)
         return right_delim, num, tail
-
-# %%
-# formula = 'COOH[C[CH3]2]3CH3'
-# formula = 'Ca7Si16O38(OH)2'
-# formula = 'Ca3Si6O15·7H2O'
-# formula = 'Ca9Si16O40(OH)2·14H2O'
-# formula = 'Ca6.4(H0.6Si2O7)2(OH)2'
-# formula = '(NH4)3PO4'
-# formula = 'Ca2SiO3(OH)2'
-formula = 'CaO·2(H2O)'
-CP = ChemParser()
-CP.atoms(formula, stack=[{}], debug=False)
-
-# %%
-def test_parser():
-    # Test data
-    dict_data = {
-        'CaO·H2O':  [{'Ca': 1.0, 'O': 2.0, 'H': 2.0}],
-        'CaO·1H2O': [{'Ca': 1.0, 'O': 2.0, 'H': 2.0}],
-        'CaO·2H2O': [{'Ca': 1.0, 'O': 3.0, 'H': 4.0}],
-        'CaO·2(H2O)': [{'Ca': 1.0, 'O': 3.0, 'H': 4.0}],
-        '2(CaO)·2(H2O)': [{'Ca': 2.0, 'O': 4.0, 'H': 4.0}],
-        '2(CaO)·2(SiO2)·2(H2O)': [{'Ca': 2.0, 'Si': 2.0, 'O': 8.0, 'H': 4.0}],
-        'COOH[C[CH3]2]3CH3': [{'C': 11.0, 'O': 2.0, 'H': 22.0}],
-        'Ca2SiO3(OH)2': [{'Ca': 2.0, 'Si': 1.0, 'O': 5.0, 'H': 2.0}],
-        'Ca7Si16O38(OH)2': [{'Ca': 7.0, 'Si': 16.0, 'O': 40.0, 'H': 2.0}],
-        'Ca6.4(H0.6Si2O7)2(OH)2': [{'Ca': 6.4, 'H': 3.2, 'Si': 4.0, 'O': 16.0}],
-        'Ca9Si6O18(OH)6·8H2O': [{'Ca': 9.0, 'Si': 6.0, 'O': 32.0, 'H': 22.0}],
-        'Ca9Si6O18(OH)6·8(H2O)': [{'Ca': 9.0, 'Si': 6.0, 'O': 32.0, 'H': 22.0}]
-    }
-    # Make sure all produce expected results
-    for formula, expected_output in dict_data.items():
-        CP = ChemParser()
-        output = CP.atoms(formula, stack=[{}], debug=False)
-        err_msg = (
-            f'Expected\n{expected_output}\n'
-            f'as output of\n"{formula}"\n'
-            f'but instead got\n{output}'
-        )
-        assert (output == expected_output), err_msg
-
-test_parser()
-
-#%%
