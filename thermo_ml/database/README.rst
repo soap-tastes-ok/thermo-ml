@@ -23,18 +23,22 @@ Summary
      - File path
      - Refs
      - Notes
+   * - atoms - electron configuration
+     - data/\*\*\*.csv
+     - [1] P.26~27
+     - n.a.
    * - atoms - ionization energy
-     - data/atoms/\*\*\*.csv
+     - data/\*\*\*.csv
      - [2]
-     - Hehe
+     - n.a.
    * - atoms - atomic radii
      - data/atoms/\*\*\*.csv
      - [1]
-     - Hehe
+     - n.a.
    * - atoms - atomic weight
      - data/atoms/\*\*\*.csv
      - [1]
-     - Hehe
+     - n.a.
 
 References
 ------------
