@@ -23,9 +23,9 @@ Summary
      - File path
      - Refs
      - Notes
-   * - atoms - electron configuration
-     - data/\*\*\*.csv
-     - [1] P.26~27
+   * - phisical constants
+     - data/physical_constants.xls
+     - [1] P.9
      - n.a.
    * - atoms - ionization energy
      - data/\*\*\*.csv
