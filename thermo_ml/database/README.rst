@@ -27,15 +27,23 @@ Summary
      - data/physical_constants.xls
      - [1] P.9
      - n.a.
-   * - atoms - ionization energy
+   * - elements - melting, boiling, tripple, critical point temperatures
+     - data/atoms/elements_phase_change_temperatures.xls
+     - [1] P.809~811
+     - n.a.
+   * - elements - electron configuration
+     - data/\*\*\*.csv
+     - [1] P.26~27
+     - n.a.
+   * - elements - ionization energy
      - data/\*\*\*.csv
      - [2]
      - n.a.
-   * - atoms - atomic radii
+   * - elements - atomic radii
      - data/atoms/\*\*\*.csv
      - [1]
      - n.a.
-   * - atoms - atomic weight
+   * - elements - atomic weight
      - data/atoms/\*\*\*.csv
      - [1]
      - n.a.
