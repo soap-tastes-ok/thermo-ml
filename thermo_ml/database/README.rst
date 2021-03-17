@@ -16,43 +16,43 @@ Summary
 -------
 
 .. list-table:: Table of references
-   :widths: 50 30 20 30
+   :widths: 30 50 30 20 30
    :header-rows: 1
 
-   * - Item
+   * - Category
+     - Item
      - File path
      - Refs
      - Notes
-   * - phisical constants
-     - data/physical_constants.xls
+   * - Constants
+     - Common fundamental constants of physics & chemistry
+     - data/fundamental_constants.xls
      - [1] P.9
      - n.a.
-   * - elements - melting, boiling, tripple, critical point temperatures
+   * - Elements
+     - Phase change: melting, boiling, tripple, critical point temperatures
      - data/atoms/elements_phase_change_temperatures.xls
-     - [1] P.809~811
+     - [1] P.809-811
      - n.a.
-   * - elements - electron configuration
-     - data/\*\*\*.csv
-     - [1] P.26~27
+   * - Elements
+     - Electron configuration of elements
+     - data/elements.xls
+     - [1] P.26-27
      - n.a.
-   * - elements - ionization energy
-     - data/\*\*\*.csv
-     - [2]
+   * - Elements
+     - Ionization energies of electrons in elements
+     - data/elements.xls
+     - [2] P.2-5
      - n.a.
-   * - elements - atomic radii
-     - data/atoms/\*\*\*.csv
-     - [1]
-     - n.a.
-   * - elements - atomic weight
-     - data/atoms/\*\*\*.csv
-     - [1]
-     - n.a.
+
 
 References
 ------------
 
-Format: ``[Year published, author] Title of article/book/etc``
+Format: MLA
 
-1. [2005, NIST] CRC Handbook of Chemistry and Physics
+1. Lide, David R., ed. CRC handbook of chemistry and physics. Vol. 85. CRC press, 2004.
 
-2. [1970, NBS/NSRDS] Ionization Potentials and Ionization Limits Derived From the Analyses of Optical Spectra
+2. Moore, Charlotte E. Ionization potentials and ionization limits derived from the analyses of optical spectra. NATIONAL STANDARD REFERENCE DATA SYSTEM, 1970.
+
+3. Allen, L.C., Electronegativity Is the Average One-Electron Energy of the Valence-Shell Electrons in Ground-State Free Atoms. Journal of the American Chemical Society, 1989. 111(25): p. 9003-9014.
