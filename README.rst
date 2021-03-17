@@ -102,6 +102,12 @@ To parse a chemical formula into it's constituent atoms, use the `ChemParser` mo
     [{'Ca': 2.0, 'Si': 1.0, 'O': 5.0, 'H': 2.0}]
 
 2. Retrieve physical & chemical properties of atoms
+---------------------------------------------------
+
+TBD
+
+3. ...
+-----
 
 TBD
 
