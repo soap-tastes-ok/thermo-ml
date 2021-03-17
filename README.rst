@@ -2,6 +2,9 @@
 Thermo-ML
 =========
 
+-------------------------------------------
+Thermodynamics powered by Machine Learning.
+-------------------------------------------
 
 :Author: Kota Matsuo ( `Linkedin <https://www.linkedin.com/in/kotamatsuo2015/?locale=en_US/>`_ )
 :Version: $Revision: 0001 $
@@ -9,10 +12,8 @@ Thermo-ML
 .. contents::
 
 
-Thermodynamics powered by Machine Learning.
-
 What is Thermo-ML?
-------------------
+===================
 
 Thermo-ML is a python library for scientists in the field of
 thermodynamics, who want to tap into the power of machine learning to
@@ -20,7 +21,7 @@ make accurate predictions. (If you have heard of ChemSage,
 FactSage, Thermochem, this project might interest you.)
 
 Goal of this project
---------------------
+====================
 
 There are two goals to this project:
 
@@ -38,7 +39,7 @@ There are two goals to this project:
 
 
 Road map
---------
+========
 
 * 2021.03.06 - [Done] Started the project
 
@@ -66,7 +67,7 @@ Road map
 
 
 Installation
-------------
+============
 
 1. Clone the repository using
 
@@ -86,7 +87,10 @@ Installation
        sys.path.append(package)
 
 Examples
--------
+========
+
+1. Parsing chemical formula into atoms
+--------------------------------------
 
 To parse a chemical formula into it's constituent atoms, use the `ChemParser` module.
 
@@ -96,6 +100,11 @@ To parse a chemical formula into it's constituent atoms, use the `ChemParser` mo
     >>> CP = parse.ChemParser()
     >>> CP.atoms("Ca2SiO3(OH)2")
     [{'Ca': 2.0, 'Si': 1.0, 'O': 5.0, 'H': 2.0}]
+
+2. Retrieve physical & chemical properties of atoms
+
+TBD
+
 
 Who’s the author?
 -----------------
