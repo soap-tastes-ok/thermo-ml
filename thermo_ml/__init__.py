@@ -1,3 +1,3 @@
-from thermocalculator import parse
+from thermo_ml import parse
 
 
