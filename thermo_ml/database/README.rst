@@ -31,7 +31,7 @@ Summary
      - n.a.
    * - Elements
      - Phase change: melting, boiling, tripple, critical point temperatures
-     - data/atoms/elements.xls
+     - data/elements.xls
      - [1] P.809-811
      - n.a.
    * - Elements
@@ -44,7 +44,21 @@ Summary
      - data/elements.xls
      - [2] P.2-5
      - n.a.
-
+   * - Elements
+     - Electronegativity of elements
+     - data/elements.xls
+     - [1], [3]
+     - Allen's electronegativity is prioritized over Pauling's electronegativity due to its accuracy
+   * - Elements
+     - Atomic radii of elements
+     - data/elements.xls
+     - 
+     - n.a.
+   * - Elements
+     - Atomic weight of elements
+     - data/elements.xls
+     - 
+     - n.a.
 
 References
 ------------
