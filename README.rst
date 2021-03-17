@@ -30,9 +30,9 @@ There are two goals to this project:
 
     2.1 Empirically & accurately deduce enthalpy of formation of any compounds just from its chemical formula (Note: My Master's thesis ;))
 
-    2.2 Empirically & accurately deduce electronegativity of transition metals (Note: Leland C. Allen mentioned in his paper "Electronegativity Is the Average One-Electron Energy of the Valence-Shell Electrons in Ground-State Free Atoms" that electronegativities are infrequently used among transition metal chemists because of the difficulty in accurately obtaining it)
+    2.2 Empirically & accurately deduce electronegativity of transition metals (Note: Leland C. Allen mentioned that electronegativities are infrequently used among transition metal chemists because of the difficulty in accurately obtaining it, in his paper "Electronegativity Is the Average One-Electron Energy of the Valence-Shell Electrons in Ground-State Free Atoms" )
 
-    2.3 Empirically & accurately deduce percentage ionic character of bonds (Note: Linus Pauling said in his book "We cannot hope to formulate an expression for the partial ionic character of bonds that will be accurate")
+    2.3 Empirically & accurately deduce percentage ionic character of bonds (Note: Linus Pauling said in his book that "We cannot hope to formulate an expression for the partial ionic character of bonds that will be accurate")
 
     2.4. Hmm what else can I do...
 
