@@ -113,7 +113,7 @@ TBD
 
 
 Who’s the author?
------------------
+=================
 
 I’m currently a machine learning engineer (director of AI Dev in a
 startup in Tokto) who was previously doing research in computational
@@ -125,7 +125,7 @@ you are there and I’ll try to work faster ;)
 
 
 Citation
---------
+========
 
 To cite Thermo-ML in publications, please use::
 
