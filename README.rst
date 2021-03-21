@@ -17,7 +17,7 @@ What is Thermo-ML?
 
 Thermo-ML is a python library for scientists in the field of
 thermodynamics, who want to tap into the power of machine learning to
-make accurate predictions. (If you have heard of ChemSage,
+make accurate predictions. (If you have heard of CALPHAD, ChemSage,
 FactSage, Thermochem, this project might interest you.)
 
 Goal of this project
@@ -25,9 +25,9 @@ Goal of this project
 
 There are two goals to this project:
 
-1. Aggregate all known physical & chemical data of atoms & molecules, so they are all accessible with once click.
+1. Aggregate all known physical & chemical data of atoms & compounds, so they are all accessible with once click.
 
-2. Develop an AI that can make accurate predictions about unknown properties of elements or even completely unknown compounds, by learning the hidden relationships between the properties of molecules (e.g. enthalpy, entropy, heat capacity, etc) and the properties of its constituent atoms (e.g. ionization energy, atomic number, electronegativity, atomic radius, etc) of thousands of compounds.
+2. Develop an AI that can make accurate predictions about unknown properties of elements or even completely unknown compounds, by learning the hidden relationships between the properties of compounds (e.g. enthalpy, entropy, heat capacity, etc) and the properties of its constituent atoms (e.g. ionization energy, atomic number, electronegativity, atomic radius, etc) of thousands of compounds.
 
     2.1 Empirically & accurately deduce enthalpy of formation of any compounds just from its chemical formula (Note: My Master's thesis ;))
 
@@ -47,7 +47,11 @@ Road map
 
 * 2021.03.XX - [In progress] Add module to get properties of atoms (e.g. ionization energy, electronegativity, atomic radius, etc).
 
-* 2021.04.XX - [JTBD] Add module to get thermodynamic properties of molecules (e.g. enthalpy, entropy, heat capacity, etc). 
+* 2021.04.XX - [JTBD] Add module to get thermodynamic properties of compounds (e.g. enthalpy, entropy, heat capacity, etc). 
+
+   - Idea 1: Convert JANAF database to ML readable format
+
+   - Idea 2: Convert open Thermo-Calc Database Format (TDB) to ML readable format
 
 * 2021.05.XX - [JTBD] Add AI module that predicts enthalpy of formation of compounds just from its chemical formula, using properties of its constituent atoms.
 
