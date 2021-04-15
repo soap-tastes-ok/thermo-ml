@@ -22,8 +22,7 @@ def atoms(chemical_formula):
             f'Parsing unsuccessful for "{chemical_formula}"'
             'Please contact bundes_liga.atok@hotmail.co.jp \n'
             'Output = {stack}')
-    dict_of_atom_counts = stack[0]
-    return dict_of_atom_counts
+    return stack[0]
 
 
 class ChemParser:
