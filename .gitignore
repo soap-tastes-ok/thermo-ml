@@ -5,6 +5,10 @@
 
 # Visual studio code work space
 *.code-workspace
+.vscode
+
+# Pytest
+.pytest_cache
 
 # Jupyter cache
 *.ipynm_checkpoints
