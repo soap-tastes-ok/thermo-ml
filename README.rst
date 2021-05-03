@@ -44,10 +44,12 @@ Road map
 * ``2021.03.06``
 
   * ✅ Started the project
+
   
 * ``2021.03.07``
   
   * ✅ Added “parse.py” module to parse chemical formula into its constituent atoms
+
 
 * ``2021.05.03``
 
@@ -57,6 +59,7 @@ Road map
 
   * ✅ Add "database.get_atoms" module to get properties of atoms (e.g. ionization energy, electronegativity, atomic radius, etc).
 
+
 * ``2021.05.XX``
 
   * [JTBD] Add module to get thermodynamic properties of compounds (e.g. enthalpy, entropy, heat capacity, etc). 
@@ -64,6 +67,7 @@ Road map
     * Idea 1: Convert JANAF database to ML readable format
 
     * Idea 2: Convert open Thermo-Calc Database Format (TDB) to ML readable format
+
 
 * ``2021.06.XX``
     
@@ -77,13 +81,16 @@ Road map
     
     * Idea 4: Deep Learning
 
+
 * ``2021.07.XX``
 
   * [JTBD] Add AI module that predicts electronegativity of all elements, including transition metals.
 
+
 * ``2021.08.XX``
 
   * [JTBD] Add AI module that predicts percentage ionic character of bonds.
+
 
 * ``2021.09.XX``
 
@@ -138,18 +145,18 @@ To retrieve atomic properties data, use the `database.get_atoms` module.
     >>>     properties = ["Z", "Symbol", "Atomic radii (pm)", "Valence electrons"]
     >>> )
 
-====  ===  ========  ===================  ===================
-  ..    Z  Symbol      Atomic radii (pm)    Valence electrons
-====  ===  ========  ===================  ===================
-   0    1  H                          25                    1
-   2    3  Li                        145                    1
-   5    6  C                          70                    4
-  13   14  Si                        110                    4
-  19   20  Ca                        180                    2
-====  ===  ========  ===================  ===================
+===  ========  ===================  ===================
+  Z  Symbol      Atomic radii (pm)    Valence electrons
+===  ========  ===================  ===================
+  1  H                          25                    1
+  3  Li                        145                    1
+  6  C                          70                    4
+ 14  Si                        110                    4
+ 20  Ca                        180                    2
+===  ========  ===================  ===================
 
 
-3. Retrieve fundamental constants of physics & chemistry
+1. Retrieve fundamental constants of physics & chemistry
 --------------------------------------------------------
 
 To retrieve fundamental constants, use the `database.get_fundamental_constants` module.
