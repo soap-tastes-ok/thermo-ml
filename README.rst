@@ -29,11 +29,11 @@ There are two goals to this project:
 
 2. Develop an AI that can make accurate predictions about unknown properties of elements or even completely unknown compounds, by learning the hidden relationships between the properties of compounds (e.g. enthalpy, entropy, heat capacity, etc) and the properties of its constituent atoms (e.g. ionization energy, atomic number, electronegativity, atomic radius, etc) of thousands of compounds.
 
-    2.1 Empirically & accurately deduce enthalpy of formation of any compounds just from its chemical formula (Note: My Master's thesis ;))
+    2.1 Predict enthalpy of formation of any compounds just from its chemical formula (Note: My Master's thesis ;))
 
-    2.2 Empirically & accurately deduce electronegativity of transition metals (Note: Leland C. Allen mentioned that electronegativities are infrequently used among transition metal chemists because of the difficulty in accurately obtaining it, in his paper "Electronegativity Is the Average One-Electron Energy of the Valence-Shell Electrons in Ground-State Free Atoms" )
+    2.2 Predict electronegativity of transition metals (Note: Leland C. Allen mentioned that electronegativities are infrequently used among transition metal chemists because of the difficulty in accurately obtaining it, in his paper "Electronegativity Is the Average One-Electron Energy of the Valence-Shell Electrons in Ground-State Free Atoms" )
 
-    2.3 Empirically & accurately deduce percentage ionic character of bonds (Note: Linus Pauling said in his book that "We cannot hope to formulate an expression for the partial ionic character of bonds that will be accurate")
+    2.3 Predict percentage ionic character of bonds (Note: Linus Pauling said in his book that "We cannot hope to formulate an expression for the partial ionic character of bonds that will be accurate")
 
     2.4. Hmm what else can I do...
 
@@ -47,15 +47,17 @@ Road map
 
 * 2021.05.03 - [Done] Refactored “parse.py” module & added test code
 
-* 2021.05.XX - [In progress] Add module to get properties of atoms (e.g. ionization energy, electronegativity, atomic radius, etc).
+* 2021.05.03 - [Done] Added "database.get_fundamental_constants" module to get major physical/chemical fundamental constants
 
-* 2021.06.XX - [JTBD] Add module to get thermodynamic properties of compounds (e.g. enthalpy, entropy, heat capacity, etc). 
+* 2021.05.03 - [Done] Add "database.get_atoms" module to get properties of atoms (e.g. ionization energy, electronegativity, atomic radius, etc).
+
+* 2021.05.XX - [JTBD] Add module to get thermodynamic properties of compounds (e.g. enthalpy, entropy, heat capacity, etc). 
 
    - Idea 1: Convert JANAF database to ML readable format
 
    - Idea 2: Convert open Thermo-Calc Database Format (TDB) to ML readable format
 
-* 2021.07.XX - [JTBD] Add AI module that predicts enthalpy of formation of compounds just from its chemical formula, using properties of its constituent atoms.
+* 2021.06.XX - [JTBD] Add AI module that predicts enthalpy of formation of compounds just from its chemical formula, using properties of its constituent atoms.
 
    - Idea 1: Multilinear regression w/ constraints
 
@@ -65,11 +67,11 @@ Road map
    
    - Idea 4: Deep Learning
 
-* 2021.08.XX - [JTBD] Add AI module that predicts electronegativity of all elements, including transition metals.
+* 2021.07.XX - [JTBD] Add AI module that predicts electronegativity of all elements, including transition metals.
 
-* 2021.09.XX - [JTBD] Add AI module that predicts percentage ionic character of bonds.
+* 2021.08.XX - [JTBD] Add AI module that predicts percentage ionic character of bonds.
 
-* 2021.10.XX - [JTBD] Add AI module that predicts entropy of formation of compounds just from its chemical formula, using properties of its constituent atoms.
+* 2021.09.XX - [JTBD] Add AI module that predicts entropy of formation of compounds just from its chemical formula, using properties of its constituent atoms.
 
 
 Installation
