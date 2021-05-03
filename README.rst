@@ -193,7 +193,7 @@ Who’s the author?
 =================
 
 I’m currently a machine learning engineer in Tokyo, who was previously doing research in computational
-thermodynamics & develop FactSage @McGill University. (`Linkedin <https://www.linkedin.com/in/kotamatsuo2015/?locale=en_US/>`_)
+thermodynamics & developing FactSage @McGill University. (`Linkedin <https://www.linkedin.com/in/kotamatsuo2015/?locale=en_US/>`_)
 
 I will work on this during weekends, so please wait patiently. If you are
 interested to follow this project, please hit the star to let me know
