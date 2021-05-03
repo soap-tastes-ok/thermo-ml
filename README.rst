@@ -143,17 +143,21 @@ To retrieve atomic properties data, use the `database.get_atoms` module.
     >>> from thermo_ml import database
     >>> df = database.get_atoms(
     >>>     atoms=['H', 'C', 'Ca', 'Si', 'Li'],
-    >>>     properties=["Z", "Symbol", "Atomic radii (pm)", "Valence electrons"])
+    >>>     properties=["Z", "Symbol", "Group", 
+    >>>                 "Atomic radii (pm)", 
+    >>>                 "Atomic weight (a.m.u.)", 
+    >>>                 "Valence electrons"]
+    >>> )
 
-===  ========  ===================  ===================
-  Z  Symbol      Atomic radii (pm)    Valence electrons
-===  ========  ===================  ===================
-  1  H                          25                    1
-  3  Li                        145                    1
-  6  C                          70                    4
- 14  Si                        110                    4
- 20  Ca                        180                    2
-===  ========  ===================  ===================
+===  ========  ========================  ===================  ===================  =======
+  Z  Symbol      Atomic weight (a.m.u.)    Atomic radii (pm)    Valence electrons    Group
+===  ========  ========================  ===================  ===================  =======
+  1  H                          1.00794                   25                    1        1
+  3  Li                         6.941                    145                    1        1
+  6  C                         12.0107                    70                    4       14
+ 14  Si                        28.0855                   110                    4       14
+ 20  Ca                        40.078                    180                    2        2
+===  ========  ========================  ===================  ===================  =======
 
 
 1. Retrieve fundamental constants of physics & chemistry
