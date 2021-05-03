@@ -123,7 +123,7 @@ To retrieve atomic properties data, use the `database.get_atoms` module.
     >>> )
 
 ====  ===  ========  ===================  ===================
-..    Z  Symbol      Atomic radii (pm)    Valence electrons
+  ..    Z  Symbol      Atomic radii (pm)    Valence electrons
 ====  ===  ========  ===================  ===================
    0    1  H                          25                    1
    2    3  Li                        145                    1
