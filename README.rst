@@ -163,7 +163,7 @@ To retrieve atomic properties data, use the `database.get_atoms` module.
 ===  ========  =======  ===================  ========================  ===================
 
 
-1. Retrieve fundamental constants of physics & chemistry
+3. Retrieve fundamental constants of physics & chemistry
 --------------------------------------------------------
 
 To retrieve fundamental constants, use the `database.get_fundamental_constants` module.
@@ -186,7 +186,7 @@ To retrieve fundamental constants, use the `database.get_fundamental_constants` 
 ====  =================================  ========  ===============  ==================  ============================  =============================================================================================================================================================================================================================================================================================
 
 
-1. ...
+4. Retrieve properties of compounds
 -----
 
 TBD
