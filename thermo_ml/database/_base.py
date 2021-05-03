@@ -300,18 +300,16 @@ class Atoms:
         Args:
             df (pd.DataFrame): Atomic 
                 properties data.
-            atoms (str|int|list, optional): 
+            atoms (list): 
                 List of atomic numbers/atomic symbols
                 for which to retrieve data. Use the
                 "atoms" class property to see 
                 the full list (e.g. Atoms().atoms).
-                Defaults to None.
-            properties (str|int|list, optional):
+            properties (list):
                 List of atomic properties or its 
                 integer index values to retrieve data.
                 Use the "properties" class property to 
                 see the full list (e.g. Atoms().properties).
-                Defaults to None.
 
         Returns:
             pd.DataFrame: Dataset containing
@@ -326,10 +324,10 @@ class Atoms:
             df = df.loc[mask_atoms]
         if properties:
             if isinstance(properties[0], str):
-                mask_properties = df.columns.isin(properties)
+                df = df[properties]
             elif isinstance(properties[0], int):
                 mask_properties = df.columns[properties]
-            df = df.iloc[:, mask_properties]
+                df = df.iloc[:, mask_properties]
         return df
 
 def _assert_list_type(list_or_string):
