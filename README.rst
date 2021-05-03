@@ -41,29 +41,23 @@ There are two goals to this project:
 Road map
 ========
 
-* ``2021.03.06``
+* ``Mar 2021``
 
   * ✅ Started the project
-
-  
-* ``2021.03.07``
   
   * ✅ Added “parse.py” module to parse chemical formula into its constituent atoms
 
 
-* ``2021.04.10``
+* ``April 2021``
   
   * ✅ Added "database.get_fundamental_constants" module to get major physical/chemical fundamental constants
 
 
-* ``2021.05.03``
+* ``May 2021``
 
   * ✅ Refactored “parse.py” module & added test code
 
   * ✅ Add "database.get_atoms" module to get properties of atoms (e.g. ionization energy, electronegativity, atomic radius, etc).
-
-
-* ``2021.05.XX``
 
   * [JTBD] Add module to get thermodynamic properties of compounds (e.g. enthalpy, entropy, heat capacity, etc). 
   
@@ -72,7 +66,7 @@ Road map
     * Idea 2: Convert open Thermo-Calc Database Format (TDB) to ML readable format
 
 
-* ``2021.06.XX``
+* ``June 2021``
     
   * [JTBD] Add AI module that predicts enthalpy of formation of compounds just from its chemical formula, using properties of its constituent atoms.
   
@@ -85,17 +79,17 @@ Road map
     * Idea 4: Deep Learning
 
 
-* ``2021.07.XX``
+* ``July 2021``
 
   * [JTBD] Add AI module that predicts electronegativity of all elements, including transition metals.
 
 
-* ``2021.08.XX``
+* ``Aug 2021``
 
   * [JTBD] Add AI module that predicts percentage ionic character of bonds.
 
 
-* ``2021.09.XX``
+* ``Sept 2021``
 
   * [JTBD] Add AI module that predicts entropy of formation of compounds just from its chemical formula, using properties of its constituent atoms.
 
