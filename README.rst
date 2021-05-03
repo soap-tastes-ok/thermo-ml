@@ -25,9 +25,9 @@ Goal of this project
 
 There are two goals to this project:
 
-1. Aggregate all known physical & chemical data of atoms & compounds, so they are all accessible with once click.
+1. Make physical & chemical data of atoms & compounds accessible with once click.
 
-2. Develop an AI that can make accurate predictions about unknown properties of elements or even completely unknown compounds, by learning the hidden relationships between the properties of compounds (e.g. enthalpy, entropy, heat capacity, etc) and the properties of its constituent atoms (e.g. ionization energy, atomic number, electronegativity, atomic radius, etc) of thousands of compounds.
+2. Develop an AI that accurately predicts unknown properties of elements or even unknown compounds, by learning the hidden relationships between the properties of compounds and its constituent atoms.
 
     2.1 Predict enthalpy of formation of any compounds just from its chemical formula (Note: My Master's thesis ;))
 
