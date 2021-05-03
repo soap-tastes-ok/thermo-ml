@@ -106,8 +106,8 @@ class ChemParser:
         """
         ### Assert formula argument is string and has length
         self._assert_input_format(formula)
-        ### Split first formula using regex
-        tail, stack, n_open_parantheses = self._formula_splitter(
+        ### Parse head/beginning of formula using regex
+        tail, stack, n_open_parantheses = self._parse_head_of_formula(
             formula, stack, n_open_parantheses)
         ### Check whether formula has been consumed yet
         if len(tail) > 0: # Continue recursive parsing.
@@ -137,7 +137,7 @@ class ChemParser:
                     f'instead got {len(formula)}')
             raise ValueError(err_msg)
 
-    def _formula_splitter(self, formula, stack, n_open_parantheses):
+    def _parse_head_of_formula(self, formula, stack, n_open_parantheses):
         """Parse left end of formula using regex
 
         Args:
@@ -312,7 +312,7 @@ class ChemParser:
                 and the remaining string.
         """
         # Split match on the left with the rest (i.e. tail)
-        atom, tail = self.__split_match(formula, regex=self.re_atom)
+        atom, tail = self.__split_by_regex_match(formula, regex=self.re_atom)
         # Base case
         if not atom:
             return None, None, tail
@@ -336,7 +336,7 @@ class ChemParser:
                 and the remaining string.
         """
         # Split match on the left with the rest (i.e. tail)
-        left_delim, tail = self.__split_match(formula, regex=self.re_left)
+        left_delim, tail = self.__split_by_regex_match(formula, regex=self.re_left)
         # Base case
         if not left_delim:
             return None, tail, False
@@ -358,7 +358,7 @@ class ChemParser:
             [type]: [description]
         """
         # Split match on the left with the rest (i.e. tail)
-        right_delim, tail = self.__split_match(formula, regex=self.re_right)
+        right_delim, tail = self.__split_by_regex_match(formula, regex=self.re_right)
         # Base case
         if not right_delim:
             return None, None, tail
@@ -366,7 +366,7 @@ class ChemParser:
         right_delim, num = self._extract_number(right_delim)
         return right_delim, num, tail
     
-    def __split_match(self, formula, regex):
+    def __split_by_regex_match(self, formula, regex):
         """Split formula by regex match
 
         Args:
@@ -374,7 +374,7 @@ class ChemParser:
                 (e.g. 'COOH(C(CH3)2)3CH3')
             regex (re.Pattern): Compiled regex 
                 string for matching pattern.
-
+        
         Returns:
             [str, str]: Matched string and the rest (i.e. tail)
         """
