@@ -29,14 +29,6 @@ There are two goals to this project:
 
 2. Develop an AI that accurately predicts unknown properties of elements or even unknown compounds, by learning the hidden relationships between the properties of compounds and its constituent atoms.
 
-    2.1 Predict enthalpy of formation of any compounds just from its chemical formula (Note: My Master's thesis ;))
-
-    2.2 Predict electronegativity of transition metals (Note: Leland C. Allen mentioned that electronegativities are infrequently used among transition metal chemists because of the difficulty in accurately obtaining it, in his paper "Electronegativity Is the Average One-Electron Energy of the Valence-Shell Electrons in Ground-State Free Atoms" )
-
-    2.3 Predict percentage ionic character of bonds (Note: Linus Pauling said in his book that "We cannot hope to formulate an expression for the partial ionic character of bonds that will be accurate")
-
-    2.4. Hmm what else can I do...
-
 
 Road map
 ========
@@ -66,7 +58,7 @@ Road map
 
 - ``June 2021``
     
-  - 🛠  Add AI module that predicts enthalpy of formation of compounds just from its chemical formula, using properties of its constituent atoms.
+  - 🛠  Add AI module for predicting enthalpy of formation of compounds just from its chemical formula, using properties of its constituent atoms.
   
     - Idea 1: Multilinear regression w/ constraints
     
@@ -78,15 +70,19 @@ Road map
 
 - ``July 2021``
 
-  - 🛠  Add AI module that predicts electronegativity of all elements, including transition metals.
+  - 🛠  Add AI module for predicting electronegativity of all elements, including transition metals. (Note: Leland C. Allen mentioned that electronegativity of transition metals are difficult to obtain, in his paper "Electronegativity Is the Average One-Electron Energy of the Valence-Shell Electrons in Ground-State Free Atoms" )
 
 - ``Aug 2021``
 
-  - 🛠  Add AI module that predicts percentage ionic character of bonds.
+  - 🛠  Add AI module for predicting percentage ionic character of bonds. (Note: Linus Pauling said in his book that "We cannot hope to formulate an expression for the partial ionic character of bonds that will be accurate")
 
 - ``Sept 2021``
 
-  - 🛠  Add AI module that predicts entropy of formation of compounds just from its chemical formula, using properties of its constituent atoms.
+  - 🛠  Add AI module for predicting entropy of formation of compounds just from its chemical formula, using properties of its constituent atoms.
+
+- ``Oct 2021``
+  
+  - Hmm what else can I do...
 
 
 Installation
