@@ -59,7 +59,7 @@ Road map
 
   * ✅ Added "database.get_atoms" module to get properties of atoms (e.g. ionization energy, electronegativity, atomic radius, etc).
 
-  * [JTBD] Add module to get thermodynamic properties of compounds (e.g. enthalpy, entropy, heat capacity, etc). 
+  * 🛠 Add module to get thermodynamic properties of compounds (e.g. enthalpy, entropy, heat capacity, etc). 
   
     * Idea 1: Convert JANAF database to ML readable format
 
@@ -68,7 +68,7 @@ Road map
 
 * ``June 2021``
     
-  * [JTBD] Add AI module that predicts enthalpy of formation of compounds just from its chemical formula, using properties of its constituent atoms.
+  * 🛠 Add AI module that predicts enthalpy of formation of compounds just from its chemical formula, using properties of its constituent atoms.
   
     * Idea 1: Multilinear regression w/ constraints
     
@@ -81,17 +81,17 @@ Road map
 
 * ``July 2021``
 
-  * [JTBD] Add AI module that predicts electronegativity of all elements, including transition metals.
+  * 🛠 Add AI module that predicts electronegativity of all elements, including transition metals.
 
 
 * ``Aug 2021``
 
-  * [JTBD] Add AI module that predicts percentage ionic character of bonds.
+  * 🛠 Add AI module that predicts percentage ionic character of bonds.
 
 
 * ``Sept 2021``
 
-  * [JTBD] Add AI module that predicts entropy of formation of compounds just from its chemical formula, using properties of its constituent atoms.
+  * 🛠 Add AI module that predicts entropy of formation of compounds just from its chemical formula, using properties of its constituent atoms.
 
 
 Installation
