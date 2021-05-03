@@ -51,11 +51,14 @@ Road map
   * ✅ Added “parse.py” module to parse chemical formula into its constituent atoms
 
 
+* ``2021.04.10``
+  
+  * ✅ Added "database.get_fundamental_constants" module to get major physical/chemical fundamental constants
+
+
 * ``2021.05.03``
 
   * ✅ Refactored “parse.py” module & added test code
-
-  * ✅ Added "database.get_fundamental_constants" module to get major physical/chemical fundamental constants
 
   * ✅ Add "database.get_atoms" module to get properties of atoms (e.g. ionization energy, electronegativity, atomic radius, etc).
 
