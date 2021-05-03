@@ -1,3 +1,6 @@
-from thermo_ml import parse
+from thermo_ml import (
+    parse,
+    database
+)
 
 
