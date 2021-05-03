@@ -132,6 +132,7 @@ To retrieve atomic properties data, use the `database.get_atoms` module.
   19   20  Ca                        180                    2
 ====  ===  ========  ===================  ===================
 
+
 3. Retrieve fundamental constants of physics & chemistry
 --------------------------------------------------------
 
