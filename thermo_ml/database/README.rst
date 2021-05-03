@@ -29,32 +29,32 @@ Summary
      - data/fundamental_constants.xls
      - [1] P.9
      - n.a.
-   * - Elements
+   * - Atoms
      - Phase change: melting, boiling, tripple, critical point temperatures
      - data/atoms.xls
      - [1] P.809-811
      - n.a.
-   * - Elements
+   * - Atoms
      - Electron configuration of elements
      - data/atoms.xls
      - [1] P.26-27
      - n.a.
-   * - Elements
+   * - Atoms
      - Ionization energies of electrons in elements
      - data/atoms.xls
      - [2] P.2-5
      - n.a.
-   * - Elements
+   * - Atoms
      - Electronegativity of elements
      - data/atoms.xls
      - [1], [3]
      - Allen's electronegativity is prioritized over Pauling's electronegativity due to its accuracy
-   * - Elements
+   * - Atoms
      - Atomic radii of elements
      - data/atoms.xls
      - 
      - n.a.
-   * - Elements
+   * - Atoms
      - Atomic weight of elements
      - data/atoms.xls
      - 
