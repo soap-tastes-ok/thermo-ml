@@ -130,6 +130,7 @@ To parse a chemical formula into it's constituent atoms, use the `ChemParser` mo
     >>> from thermo_ml import parse
     >>> CP = parse.ChemParser()
     >>> CP.atoms("Ca2SiO3(OH)2")
+
     [{'Ca': 2.0, 'Si': 1.0, 'O': 5.0, 'H': 2.0}]
 
 2. Retrieve physical & chemical properties of atoms
@@ -141,9 +142,8 @@ To retrieve atomic properties data, use the `database.get_atoms` module.
     
     >>> from thermo_ml import database
     >>> df = database.get_atoms(
-    >>>     atoms = ['H', 'C', 'Ca', 'Si', 'Li'],
-    >>>     properties = ["Z", "Symbol", "Atomic radii (pm)", "Valence electrons"]
-    >>> )
+    >>>     atoms=['H', 'C', 'Ca', 'Si', 'Li'],
+    >>>     properties=["Z", "Symbol", "Atomic radii (pm)", "Valence electrons"])
 
 ===  ========  ===================  ===================
   Z  Symbol      Atomic radii (pm)    Valence electrons
@@ -172,29 +172,14 @@ To retrieve fundamental constants, use the `database.get_fundamental_constants` 
    0  Speed of light                     c             2.99792e+08  ms^(-1)             nan                           Speed of photon in vacuum
    1  Magnetic constant                  μ_0           1.25664e-06  NA^(-2)             nan                           Magnetic permeability in vacuum
    2  Electric constant                  ε_0           8.85419e-12  Fm^(-1)             nan                           Electric field permittivity in vacuum
-   3  Newtonian constant of gravitation  G             6.67421e-11  m^3 kg^(-1) s^(-2)  F(r^2)/(M1 M2)                Defines the force (F) attracting two spherical bodies of mass M1 and M2, separated by a distance r.
-   4  Planck constant                    h             6.62607e-34  Js                  nan                           Defines how much a photon's energy increases , when the frequency of its electromagnetic is increased by 1
-   5  Reduced planck constant            ℏ             1.05457e-34  Js                  h/2π                          Defines how much a photon's energy increases , when the angular frequency (measured in radians per sec) of its electromagnetic is increased by 1
-   6  Elementary charge                  e             1.60218e-19  C                   nan                           electric charge carried by a single proton or, equivalently, the magnitude of the negative electric charge carried by a single electron
-   7  Magnetic flux quantum              ϕ_0           2.06783e-15  Wb                  h/2e                          Defines quantization of magnetic flux. First discovered in superconductors, where current is carried by cooper pairs of charge 2e. But the same (Aharonov-Bohm) effect has been observed in many different non-superconducting systems as well, so it's often defined as h/e instead of h/2e.
-   8  Conductance quantum                G_0           7.74809e-05  S                   2e^2/h                        Quantized unit of electrical conductance
-   9  Mass of electron                   m_e           9.10938e-31  kg                  nan                           Mass of a single electron
-  10  Mass of proton                     m_p           1.67262e-27  kg                  nan                           Mass of a single proton
-  11  Proton electron mass ratio         m_p/m_e    1836.15         nan                 nan                           Ratio of mass of proton over mass of electron
-  12  Fine-structure constant            α             0.00729735   nan                 (e^2)/(4π ε_0 ħ c)            Quantifies the strength of the electromagnetic interaction between elementary charged particles.
-  13  Inverse fine-structure constant    α^(-1)      137.036        nan                 nan                           nan
-  14  Rydberg constant                   R_∞           1.09737e+07  m^(-1)              (α^2 m_e c)/(2 h)             The constant appearing in the Balmer formula for spectral lines of the hydrogen atom. Was first a fitting parameter, but later found by Neils Bohr as a universal constant.
-  15  Avogadro constant                  N_A           6.02214e+23  mol^(-1)            nan                           A proportionality factor that relates the number of constituent particles in a sample with the amount of substance in that sample
-  16  Faraday constant                   F         96485.3          C mol^(-1)          N_A e                         Magnitude of electric charge per mole of electrons
-  17  Gas constant                       R             8.31447      J mol^(-1) K^(-1)   nan                           Equivalent to the Boltzmann constant, but expressed in units of energy per temperature increment per mole, i.e. the pressure–volume product, rather than energy per temperature increment per particle.
-  18  Boltzmann constant                 k             1.38065e-23  J K^(-1)            R/N_A                         Relates the average relative kinetic energy of particles in a gas with the thermodynamic temperature of the gas
+ ...  ...                                ...           ...          ...                 ...                           ...
   19  Stefan-boltzman constant           σ             5.6704e-08   W m^(-2) K^(-4)     ((π^2 / 60) k^4) / (ℏ^3 c^2)  Constant of proportionality in Stefan-Boltzmann law of Blackbody radiation. Used to measure the amount of heat radiated from the black body, and to convert temperature (K) to units for intensity (W.m-2) which is basically Power per unit area.
   20  Electron volt                      eV            1.60218e-19  J                   e/C                           Energy gained by the charge of a single electron moved across an electric potential difference of 1 volt. Thus it is 1 volt (1 J/C) multiplied by the electron charge (1.602176565(35)×10−19 C)
   21  Unified atomic mass unit           u             1.66054e-27  kg                  (10^(-3) kg/mol ) / N_A       The dalton or unified atomic mass unit is a unit of mass widely used in physics and chemistry. It is defined as 1/12 of the mass of an unbound neutral atom of carbon-12 in its nuclear and electronic ground state and at rest
 ====  =================================  ========  ===============  ==================  ============================  =============================================================================================================================================================================================================================================================================================
 
 
-4. ...
+1. ...
 -----
 
 TBD
