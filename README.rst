@@ -128,6 +128,7 @@ To parse a chemical formula into it's constituent atoms, use the `ChemParser` mo
 .. code-block:: python
     
     >>> from thermo_ml import parse
+    >>> 
     >>> CP = parse.ChemParser()
     >>> CP.atoms("Ca2SiO3(OH)2")
 
@@ -141,6 +142,7 @@ To retrieve atomic properties data, use the `database.get_atoms` module.
 .. code-block:: python
     
     >>> from thermo_ml import database
+    >>> 
     >>> atoms = ['H', 'C', 'Ca', 'Si', 'Li']
     >>> properties = [
     >>>     "Z", "Symbol", "Group", 
