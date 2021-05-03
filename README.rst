@@ -141,13 +141,14 @@ To retrieve atomic properties data, use the `database.get_atoms` module.
 .. code-block:: python
     
     >>> from thermo_ml import database
-    >>> df = database.get_atoms(
-    >>>     atoms=['H', 'C', 'Ca', 'Si', 'Li'],
-    >>>     properties=["Z", "Symbol", "Group", 
-    >>>                 "Atomic radii (pm)", 
-    >>>                 "Atomic weight (a.m.u.)", 
-    >>>                 "Valence electrons"]
-    >>> )
+    >>> atoms = ['H', 'C', 'Ca', 'Si', 'Li']
+    >>> properties = [
+    >>>     "Z", "Symbol", "Group", 
+    >>>     "Atomic radii (pm)", 
+    >>>     "Atomic weight (a.m.u.)", 
+    >>>     "Valence electrons"
+    >>> ]
+    >>> df = database.get_atoms(atoms, properties)
 
 ===  ========  =======  ===================  ========================  ===================
   Z  Symbol      Group    Atomic radii (pm)    Atomic weight (a.m.u.)    Valence electrons
