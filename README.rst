@@ -41,57 +41,52 @@ There are two goals to this project:
 Road map
 ========
 
-* ``Mar 2021``
-
-  * ✅ Started the project
+- ``Mar 2021``
   
-  * ✅ Added “parse.py” module to parse chemical formula into its constituent atoms
-
-
-* ``April 2021``
+  - ✅  Started the project
   
-  * ✅ Added "database.get_fundamental_constants" module to get major physical/chemical fundamental constants
+  - ✅  Added “parse.py” module to parse chemical formula into its constituent atoms
 
 
-* ``May 2021``
-
-  * ✅ Refactored “parse.py” module & added test code
-
-  * ✅ Added "database.get_atoms" module to get properties of atoms (e.g. ionization energy, electronegativity, atomic radius, etc).
-
-  * 🛠 Add module to get thermodynamic properties of compounds (e.g. enthalpy, entropy, heat capacity, etc). 
+- ``April 2021``
   
-    * Idea 1: Convert JANAF database to ML readable format
+  - ✅  Added "database.get_fundamental_constants" module to get major physical/chemical fundamental constants
 
-    * Idea 2: Convert open Thermo-Calc Database Format (TDB) to ML readable format
+- ``May 2021``
 
+  - ✅  Refactored “parse.py” module & added test code
 
-* ``June 2021``
-    
-  * 🛠 Add AI module that predicts enthalpy of formation of compounds just from its chemical formula, using properties of its constituent atoms.
+  - ✅  Added "database.get_atoms" module to get properties of atoms (e.g. ionization energy, electronegativity, atomic radius, etc).
+
+  - 🛠  Add module to get thermodynamic properties of compounds (e.g. enthalpy, entropy, heat capacity, etc). 
   
-    * Idea 1: Multilinear regression w/ constraints
+    - Idea 1: Convert JANAF database to ML readable format
+
+    - Idea 2: Convert open Thermo-Calc Database Format (TDB) to ML readable format
+
+- ``June 2021``
     
-    * Idea 2: Quadratic programming w/ constraints
+  - 🛠  Add AI module that predicts enthalpy of formation of compounds just from its chemical formula, using properties of its constituent atoms.
+  
+    - Idea 1: Multilinear regression w/ constraints
     
-    * Idea 3: Symbolic regression + genetic programming
+    - Idea 2: Quadratic programming w/ constraints
     
-    * Idea 4: Deep Learning
+    - Idea 3: Symbolic regression + genetic programming
+    
+    - Idea 4: Deep Learning
 
+- ``July 2021``
 
-* ``July 2021``
+  - 🛠  Add AI module that predicts electronegativity of all elements, including transition metals.
 
-  * 🛠 Add AI module that predicts electronegativity of all elements, including transition metals.
+- ``Aug 2021``
 
+  - 🛠  Add AI module that predicts percentage ionic character of bonds.
 
-* ``Aug 2021``
+- ``Sept 2021``
 
-  * 🛠 Add AI module that predicts percentage ionic character of bonds.
-
-
-* ``Sept 2021``
-
-  * 🛠 Add AI module that predicts entropy of formation of compounds just from its chemical formula, using properties of its constituent atoms.
+  - 🛠  Add AI module that predicts entropy of formation of compounds just from its chemical formula, using properties of its constituent atoms.
 
 
 Installation
@@ -117,7 +112,7 @@ Installation
 Examples
 ========
 
-1. Parsing chemical formula into atoms
+1. Parse chemical formula into atoms
 --------------------------------------
 
 To parse a chemical formula into it's constituent atoms, use the `ChemParser` module.
