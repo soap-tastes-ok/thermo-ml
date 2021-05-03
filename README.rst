@@ -43,17 +43,19 @@ Road map
 
 * 2021.03.06 - [Done] Started the project
 
-* 2021.03.07 - [Done] Added “parse.py” module to parse chemical formula into its constituent atoms 
+* 2021.03.07 - [Done] Added “parse.py” module to parse chemical formula into its constituent atoms
 
-* 2021.03.XX - [In progress] Add module to get properties of atoms (e.g. ionization energy, electronegativity, atomic radius, etc).
+* 2021.05.03 - [Done] Refactored “parse.py” module & added test code
 
-* 2021.04.XX - [JTBD] Add module to get thermodynamic properties of compounds (e.g. enthalpy, entropy, heat capacity, etc). 
+* 2021.05.XX - [In progress] Add module to get properties of atoms (e.g. ionization energy, electronegativity, atomic radius, etc).
+
+* 2021.06.XX - [JTBD] Add module to get thermodynamic properties of compounds (e.g. enthalpy, entropy, heat capacity, etc). 
 
    - Idea 1: Convert JANAF database to ML readable format
 
    - Idea 2: Convert open Thermo-Calc Database Format (TDB) to ML readable format
 
-* 2021.05.XX - [JTBD] Add AI module that predicts enthalpy of formation of compounds just from its chemical formula, using properties of its constituent atoms.
+* 2021.07.XX - [JTBD] Add AI module that predicts enthalpy of formation of compounds just from its chemical formula, using properties of its constituent atoms.
 
    - Idea 1: Multilinear regression w/ constraints
 
@@ -63,11 +65,11 @@ Road map
    
    - Idea 4: Deep Learning
 
-* 2021.06.XX - [JTBD] Add AI module that predicts electronegativity of all elements, including transition metals.
+* 2021.08.XX - [JTBD] Add AI module that predicts electronegativity of all elements, including transition metals.
 
-* 2021.07.XX - [JTBD] Add AI module that predicts percentage ionic character of bonds.
+* 2021.09.XX - [JTBD] Add AI module that predicts percentage ionic character of bonds.
 
-* 2021.08.XX - [JTBD] Add AI module that predicts entropy of formation of compounds just from its chemical formula, using properties of its constituent atoms.
+* 2021.10.XX - [JTBD] Add AI module that predicts entropy of formation of compounds just from its chemical formula, using properties of its constituent atoms.
 
 
 Installation
