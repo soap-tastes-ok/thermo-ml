@@ -57,7 +57,7 @@ Road map
 
   * ✅ Refactored “parse.py” module & added test code
 
-  * ✅ Add "database.get_atoms" module to get properties of atoms (e.g. ionization energy, electronegativity, atomic radius, etc).
+  * ✅ Added "database.get_atoms" module to get properties of atoms (e.g. ionization energy, electronegativity, atomic radius, etc).
 
   * [JTBD] Add module to get thermodynamic properties of compounds (e.g. enthalpy, entropy, heat capacity, etc). 
   
