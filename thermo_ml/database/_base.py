@@ -7,62 +7,64 @@ DTYPES_PROPERTIES = {
     'Z': 'uint16',
     'Symbol': 'object',
     'Name': 'object',
-    'Atomic weight (a.m.u.)': 'float64',
-    'Density (g/cm3)': 'float64',
-    'Solid-liquid-gas triple point  (MPa)': 'float64',
-    'Solid-liquid-gas triple point  (C)': 'float64',
+    'Atomic weight (a.m.u.)': 'float32',
+    'Density (g/cm3)': 'float32',
+    'Solid-liquid-gas triple point  (MPa)': 'float32',
+    'Solid-liquid-gas triple point  (C)': 'float32',
     'Melting point phase transition': 'object',
-    'Melting point  (C)': 'float64',
-    'Boiling point  (C)': 'float64',
-    'Sublimation point (C)': 'float64',
-    'Critical point  (C)': 'float64',
-    'Specific heat (J/g K)': 'float64',
-    'X_Allen_Pauling': 'float64',
+    'Melting point  (C)': 'float32',
+    'Boiling point  (C)': 'float32',
+    'Sublimation point (C)': 'float32',
+    'Critical point  (C)': 'float32',
+    'Specific heat (J/g K)': 'float32',
+    'Electronegativity': 'float32',
     'Atomic radii (pm)': 'uint16',
     'Van der Waals radii (pm)': 'uint16',
     'Covalent radii (pm)': 'uint16',
-    'Valence electrons': 'uint16',
-    'Group': 'uint16',
-    'Electron config - 1s': 'uint16',
-    'Electron config - 2s': 'uint16',
-    'Electron config - 2p': 'uint16',
-    'Electron config - 3s': 'uint16',
-    'Electron config - 3p': 'uint16',
-    'Electron config - 3d': 'uint16',
-    'Electron config - 4s': 'uint16',
-    'Electron config - 4p': 'uint16',
-    'Electron config - 4d': 'uint16',
-    'Electron config - 4f': 'uint16',
-    'Electron config - 5s': 'uint16',
-    'Electron config - 5p': 'uint16',
-    'Electron config - 5d': 'uint16',
-    'Electron config - 5f': 'uint16',
-    'Electron config - 6s': 'uint16',
-    'Electron config - 6p': 'uint16',
-    'Electron config - 6d': 'uint16',
-    'Electron config - 7s': 'uint16',
-    'Electron config - 7p': 'uint16',
-    'Ionization energy (eV) - 1': 'float64',
-    'Ionization energy (eV) - 2': 'float64',
-    'Ionization energy (eV) - 3': 'float64',
-    'Ionization energy (eV) - 4': 'float64',
-    'Ionization energy (eV) - 5': 'float64',
-    'Ionization energy (eV) - 6': 'float64',
-    'Ionization energy (eV) - 7': 'float64',
-    'Ionization energy (eV) - 8': 'float64',
-    'Ionization energy (eV) - 9': 'float64',
-    'Ionization energy (eV) - 10': 'float64',
-    'Ionization energy (eV) - 11': 'float64',
-    'Ionization energy (eV) - 12': 'float64',
-    'Ionization energy (eV) - 13': 'float64',
-    'Ionization energy (eV) - 14': 'float64',
-    'Ionization energy (eV) - 15': 'float64',
-    'Ionization energy (eV) - 16': 'float64',
-    'Ionization energy (eV) - 17': 'float64',
-    'Ionization energy (eV) - 18': 'float64',
-    'Ionization energy (eV) - 19': 'float64',
-    'Ionization energy (eV) - 20': 'float64',
-    'Ionization energy (eV) - 21': 'float64'}
+    'Valence electrons': 'uint8',
+    'Group': 'uint8',
+    'Electron config - 1s': 'uint8',
+    'Electron config - 2s': 'uint8',
+    'Electron config - 2p': 'uint8',
+    'Electron config - 3s': 'uint8',
+    'Electron config - 3p': 'uint8',
+    'Electron config - 3d': 'uint8',
+    'Electron config - 4s': 'uint8',
+    'Electron config - 4p': 'uint8',
+    'Electron config - 4d': 'uint8',
+    'Electron config - 4f': 'uint8',
+    'Electron config - 5s': 'uint8',
+    'Electron config - 5p': 'uint8',
+    'Electron config - 5d': 'uint8',
+    'Electron config - 5f': 'uint8',
+    'Electron config - 6s': 'uint8',
+    'Electron config - 6p': 'uint8',
+    'Electron config - 6d': 'uint8',
+    'Electron config - 7s': 'uint8',
+    'Electron config - 7p': 'uint8',
+    'Ionization energy (eV) - 1': 'float32',
+    'Ionization energy (eV) - 2': 'float32',
+    'Ionization energy (eV) - 3': 'float32',
+    'Ionization energy (eV) - 4': 'float32',
+    'Ionization energy (eV) - 5': 'float32',
+    'Ionization energy (eV) - 6': 'float32',
+    'Ionization energy (eV) - 7': 'float32',
+    'Ionization energy (eV) - 8': 'float32',
+    'Ionization energy (eV) - 9': 'float32',
+    'Ionization energy (eV) - 10': 'float32',
+    'Ionization energy (eV) - 11': 'float32',
+    'Ionization energy (eV) - 12': 'float32',
+    'Ionization energy (eV) - 13': 'float32',
+    'Ionization energy (eV) - 14': 'float32',
+    'Ionization energy (eV) - 15': 'float32',
+    'Ionization energy (eV) - 16': 'float32',
+    'Ionization energy (eV) - 17': 'float32',
+    'Ionization energy (eV) - 18': 'float32',
+    'Ionization energy (eV) - 19': 'float32',
+    'Ionization energy (eV) - 20': 'float32',
+    'Ionization energy (eV) - 21': 'float32',
+    'Electron afﬁnity (eV)': 'float32'
+}
 
 def get_fundamental_constants() -> pd.DataFrame():
     """Load fundamental constants of physics & chemistry
@@ -266,7 +268,7 @@ class Atoms:
             binaryio, 
             sheet_name='Summary',
             skiprows=7,
-            usecols='A:BG'
+            usecols='A:BH'
         )
 
     @staticmethod
@@ -386,6 +388,17 @@ class Compounds:
 #         sys.path.append(package)
 # #################################################
 
+# #%%
+# a = np.array([0.123456789121212,2,3], dtype=np.float16)
+# print("16bit: ", a[0])
+# a = np.array([0.123456789121212,2,3], dtype=np.float32)
+# print("32bit: ", a[0])
+# b = np.array([0.123456789121212121212,2,3], dtype=np.float64)
+# print("64bit: ", b[0])
+
+# 16bit: 0.1235
+# 32bit: 0.12345679
+# 64bit: 0.12345678912121212
 
 
 #%%
@@ -520,7 +533,7 @@ class Compounds:
 #     10: 'Sublimation point (C)',
 #     11: 'Critical point  (C)',
 #     12: 'Specific heat (J/g K)',
-#     13: 'X_Allen_Pauling',
+#     13: 'Electronegativity',
 #     14: 'Atomic radii (pm)',
 #     15: 'Van der Waals radii (pm)',
 #     16: 'Covalent radii (pm)',
