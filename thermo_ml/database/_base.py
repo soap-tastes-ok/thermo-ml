@@ -3,6 +3,19 @@ from importlib import resources
 import pandas as pd
 
 
+### Note: Data types and their values
+# int8	    -128 to 127
+# int16	    -32768 to 32767
+# int32	    -2147483648 to 2147483647
+# int64	    -9223372036854775808 to 9223372036854775807
+# uint8	    0 to 255
+# uint16	0 to 65535
+# uint32	0 to 4294967295
+# uint64	0 to 18446744073709551615
+# float16	0.1235
+# float32	0.12345679
+# float64	0.123456789
+
 DTYPES_PROPERTIES = {
     'Z': 'uint16',
     'Symbol': 'object',
@@ -399,6 +412,9 @@ class Compounds:
 # 16bit: 0.1235
 # 32bit: 0.12345679
 # 64bit: 0.12345678912121212
+
+
+
 
 
 #%%
