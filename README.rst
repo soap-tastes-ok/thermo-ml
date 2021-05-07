@@ -58,7 +58,9 @@ Road map
 
 - ``June 2021``
     
-  - 🛠  Add AI module for predicting ``enthalpy of formation`` of oxide compounds just from its chemical formula, using properties of its constituent atoms. The reason why I focus on oxides is; (1) oxides are common, and (2) to keep the charge on cations rather constant. If the charge changes, electronegativity changes, and if electronegativity changes, so does enthalpy. For more info see `[1993, Huheey] Inorgani  Chemistry - Principles of Structure and Reactivity, 4th Edition` P.184 equation 5.62 and Fig. 5.32.
+  - 🛠  Add AI module for predicting ``enthalpy of formation`` of oxide compounds just from its chemical formula, using properties of its constituent atoms.
+  
+    - Note: The reason why I focus on oxides is; (1) oxides are common, and (2) to keep the charge on cations rather constant. If the charge changes, electronegativity changes, and if electronegativity changes, so does enthalpy. For more info see `[1993, Huheey] Inorgani  Chemistry - Principles of Structure and Reactivity, 4th Edition` P.184 equation 5.62 and Fig. 5.32.
   
     - Idea 1: Multilinear regression w/ constraints
     
